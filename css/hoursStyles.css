@@ -1,0 +1,550 @@
+/*---------------------------------------------------------------------
+                TIPPI NAILS WEBSITE CSS STYLE FILE
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+                 MOBILE DEFAULT STYLES - GLOBAL STYLES
+---------------------------------------------------------------------*/
+
+/* Prevents adjustments of font size after orientation change in IE on Windows phone and in IOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ 
+/* Apply a natural box model layout to all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix: Force an element not to collapse */
+.clearfix: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* All images and video set to 100% width of their parent container */
+img, video {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*---------------------------------------------------------------------
+                                 HOURS
+---------------------------------------------------------------------*/
+
+.backgroundImg {
+    
+    background-image: url(../images/bokeh-2152298_1920.jpg);
+    z-index:-10000;   
+}
+
+#mainMenu {
+    
+    position: fixed;
+    display: inline-flex;     /* Display gets menu items to get inline horizontally */
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px; 
+    z-index: 10;
+    font-family: 'Bad Script', cursive;
+    
+    /*Shadow border bottom on nav bar*/
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.logoLink {
+    
+    display: inline-flex;
+}
+
+.otherLinks {
+    
+    text-shadow: 1px 0px black;
+}
+
+.t {
+    
+    font-weight:bold;
+    color: hotpink;
+    order: 1;
+    font-size: 20px;
+    text-shadow: 1px 0px hotpink;
+}
+
+.n {
+    
+    font-weight:bold;
+    color: black;
+    order: 2;
+    font-size: 20px;
+    text-shadow: 1px 0px black;
+}
+
+
+.menuItems li {
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.menuItems a { 
+    
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*Must be in this order link, visited, hover and active*/
+.menuItems a:link {
+    
+    color: black;
+}
+
+.menuItems a:visited {
+    
+    color: black;
+}
+
+.menuItems a:hover {
+    
+    color: hotpink;
+}
+
+.menuItems a:hover {
+    
+    color: hotpink;
+}
+
+
+#hoursPage {
+    
+    display: flex;
+    padding-bottom: 200px;
+    color: black;
+    /*background-color: whitesmoke;*/
+}
+
+#hoursSect {
+    
+    position: relative;
+    top: 100px;
+    width: 100%;
+    color: 
+}
+
+.hoursTitle {
+    
+    order: 1;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bad Script', cursive;
+    text-shadow: 2px 2px white;
+}
+
+.daysOfWeek {
+    
+    order: 2;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -10px;
+    font-size: 28px;
+}
+
+.daysOfWeek h2 {
+    
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-color: silver;
+    font-family: 'Bad Script', cursive;
+    text-shadow: 1px 1px white;
+}
+
+.daysOfWeek h2:hover {
+    
+    text-decoration-color: hotpink;
+}
+
+.daysOfWeek .close {
+    
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    font-family: 'Bad Script', cursive;
+}
+
+.mon {
+    
+    order: 1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.second {
+    
+    order: 2;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.third {
+    
+    order: 3;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tue {
+    
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.wed {
+    
+    margin-right: 7%;
+}
+
+.thu {
+    
+    margin-right: 7%;
+}
+
+.fri {
+    
+    margin-right: 7%;
+}
+
+.sat {
+    
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.sun {
+    
+    margin-right: 7%;
+}
+
+h2 {
+    
+    font-size: 30px;
+}
+
+time {
+    
+    font-size: 28px;
+    font-family: 'Bad Script', cursive;
+    text-shadow: 1px 0px black;
+}
+
+
+
+/*---------------------------------------------------------------------
+               HOME PAGE STYLES = FOOTER SECTION
+---------------------------------------------------------------------*/
+
+#footer {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Bad Script', cursive;
+    
+    /*Top Border Shadow*/
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    
+    
+}
+
+.footerItems {
+    
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    
+}
+
+.social-links {
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-bottom:30px;
+    display:flex;
+    justify-content: center;
+    margin:0 5px;
+    border-radius:3px;
+    box-shadow:0 4px 0 transparent;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+    
+
+}
+
+
+.social-links a {
+    display:block;
+    font-size:21px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background: black;
+    border: 1px solid white;
+    border-radius:50%;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+    color: hotpink; 
+   
+}
+
+.social-links a:hover {
+    color: hotpink;
+    background: white;
+   
+}
+
+.footerText {
+    
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    line-height: 10px;
+}
+
+
+/*---------------------------------------------------------------------
+                          MEDIA QUERIES
+---------------------------------------------------------------------*/
+
+@media (max-width: 1175px) {
+    
+    time {
+        
+        font-size: 18px;
+    }
+    
+    .daysOfWeek .close {
+        
+        font-size: 18px;
+    }
+
+    .daysOfWeek h2 {
+    
+    font-size: 28px;
+    }
+
+}
+
+@media (max-width: 840px) {
+    
+    .hoursTitle {
+        
+        font-size: 30px;
+    }
+    
+    time {
+        
+        font-size: 15px;
+    }
+    
+    .daysOfWeek .close {
+        
+        font-size: 15px;
+    }
+
+    .daysOfWeek h2 {
+    
+    font-size: 25px;
+    }
+    
+}
+
+@media (max-width: 725px) {
+    
+    .fri time {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 711px) {
+    
+    .fri time {
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .hoursTitle {
+        
+        font-size: 20px;
+    }
+    
+    time {
+        
+        font-size: 15px;
+    }
+    
+    .daysOfWeek .close {
+        
+        font-size: 15px;
+    }
+
+    .daysOfWeek h2 {
+    
+    font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 490px) {
+    
+    time {
+        
+        font-size: 12px;
+    }
+    
+    .daysOfWeek .close {
+        
+        font-size: 12px;
+    }
+
+    .daysOfWeek h2 {
+    
+    font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 460px) {
+    
+    #hoursPage {
+        
+        padding-bottom: 150px;
+    }
+    
+    .hoursTitle {
+        
+        font-size: 15px;
+    }
+    
+    time {
+        
+        font-size: 10px;
+    }
+    
+    .daysOfWeek .close {
+        
+        font-size: 10px;
+    }
+
+    .daysOfWeek h2 {
+    
+    font-size: 15px;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+                          NAV BAR TOGGLE
+---------------------------------------------------------------------*/
+
+.topnav a {
+    
+    color: black; 
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.topnav a:hover {
+    
+    color: hotpink;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav .icon {
+    display: none;
+    color: black;
+}
+
+.topnav .icon:hover {
+    color: hotpink;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:nth-child(3)) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    
+    .topnav a{
+        color: black;
+        padding-left: 5px;;
+        padding-right: 5px;
+        font-size: 15px;
+    }
+    
+    .topnav a:hover{
+        color: hotpink;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+

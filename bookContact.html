@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <meta charset="utf-8"/> 
+        <title>Book/Contact - Tippi Nails</title>
+        <!-- MY CSS -->
+        <link href="css/bookContact.css" rel=stylesheet type="text/css"/>
+        <!-- CSS RESET NORMALIZE -->
+        <!-- Normalize.css is a small CSS file that provides better cross-browser 
+             consistency in the default styling of HTML elements. -->
+        <link href="css/normalize.css" rel=stylesheet type="text/css"/>
+        <link href="css/animate.css" rel=stylesheet type="text/css"/>
+        <link href="css/hover-min.css" rel=stylesheet type="text/css"/>
+        <!-- FONT AWESOME CDN -->
+        <script src="https://use.fontawesome.com/1738d745de.js"></script>
+        <!-- MAP -->
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Courgette|Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+         
+        <!---------------------------------------------------------------
+                                BOOK/CONTACT SECTION
+        ---------------------------------------------------------------->
+
+        <!---------------------------------------------------------------
+                              NAVIGATION SECTION
+        ---------------------------------------------------------------->
+        
+        <section id="bookContactPage" class="section1">
+            
+                <div id="mainMenu" class=" topnav navC menuItems animated slideInDown">
+                    
+                    
+                            
+                            <a class="otherLinks" class="otherLinks" href="services.html">SERVICES</a>
+                            <a class="otherLinks" href="gallery.html">GALLERY</a>
+                            <a class="logoLink" href="indexNail.html"><div class="t">Tippi</div><div class="n"> Nails</div></a>
+                            <a class="otherLinks" href="hours.html">HOURS</a>
+                            <a class="otherLinks" href="bookContact.html">BOOK/CONTACT</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                        
+                            
+                  
+                
+                </div>
+
+        <!---------------------------------------------------------------
+                            NAVIGATION SECTION ENDS
+        ---------------------------------------------------------------->
+            
+        <!---------------------------------------------------------------
+                               BOOK/CONTACT SECTION ENDS
+        ----------------------------------------------------------------> 
+        
+            <div class="bookContactSect">
+                
+                <div class="bookArticle wow slideInLeft">
+                    
+                    <h1>Book Now</h1>
+                    
+                    <form>
+                        
+                        <input type="text" name="nailInput" value="Full Name" onfocus="if(this.value == 'Full Name') {this.value=''};" style="width:465px">
+                        
+                        <br/>
+                        <input type="text" name="emailAddress" value="Email" onfocus="if(this.value == 'Email') {this.value=''};" style="width:465px">
+                        <br/>
+                        <input type="text" name="phoneNumber" value="Phone Number" onfocus="if(this.value == 'Phone Number') {this.value=''};" style="width:465px">
+                        <br/>
+                        <textarea name="Text1" value="message" onfocus="if(this.value == 'Message') {this.value=''};" cols="40" rows="5">Message</textarea>
+                        <br/>
+                        <button class="hvr-round-corners" type="button">Book</button>
+                    
+                    </form>
+                
+                </div>
+                
+                <div class="contactArticle wow slideInRight">
+                    
+                    <h1 >Contact Us On</h1>
+                    <div>
+                    <p class="numb"><i class="fa fa-phone hvr-icon-grow"></i><br/><br/><b>020 8551 4707</b> </p>
+                    
+                    <h3>Better Yet <br/> See Us In Person</h3>
+                    <p class="address"><i class="fa fa-map-marker hvr-icon-grow"></i><br/><br/> <b>High View Parade, <br/>14 Woodford Ave,<br/> Ilford IG4 5EP</b> </p>
+                    </div>
+                    
+                
+                </div>
+
+            </div>
+            
+             <div id='map'></div>
+            
+        </section>
+            
+        <!---------------------------------------------------------------
+                                     FOOTER
+        ----------------------------------------------------------------> 
+        
+        <section id="footer" class="container">
+        
+                <div class="footerItems">
+                    
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/tippinails" target="_blank" class="fbIcon"><i class="fa fa-facebook fa-lg"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.instagram.com/tippinails_/" target="_blank" class="instaIcon"><i class="fa fa-instagram fa-lg"></i></a>
+                    </div>
+                    
+                    <div class="footerText">
+                    <p><b class="cSymbol">&copy;</b><b> 2017 - Tippi Nails</b></p>
+                    <p><b>Redesigned By Kiran Paul</b></p>
+                    </div>
+                
+                    
+                </div>
+            
+        </section>
+            
+        <!---------------------------------------------------------------
+                                   FOOTER ENDS
+        ----------------------------------------------------------------> 
+            
+        <!---------------------------------------------------------------
+                            FIRST PAGE SECTION ENDS
+        ---------------------------------------------------------------->
+
+        <script>
+            
+            L.mapbox.accessToken = 'pk.eyJ1Ijoia2lyYW5wIiwiYSI6ImNqOTYyMDd3OTAxY24yeGxuMWs4MTg5eGMifQ.HyqOJpeVwr_FBolX1COjDg';
+            var map = L.mapbox.map('map', 'mapbox.streets')
+            .setView([51.5819104, 0.0551712], 16);
+            
+            
+            L.mapbox.featureLayer({
+                // this feature is in the GeoJSON format: see geojson.org
+                // for the full specification
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    // coordinates here are in longitude, latitude order because
+                    // x, y is the standard for GeoJSON and many formats
+                    coordinates: [
+                        0.0561635,
+                        51.5818305 
+                    ]
+                },
+                properties: {
+                    title: 'Tippi Nails',
+                    description: 'High View Parade, 14 Woodford Ave, Ilford IG4 5EP',
+                    // one can customize markers by adding simplestyle properties
+                    // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+                    'marker-size': 'large',
+                    'marker-color': '#FF69B4',
+                    'marker-symbol': 'star'
+                }
+            }).addTo(map);
+            
+            
+            //DISABLE THE ZOOM 
+            L.mapbox.accessToken = 'pk.eyJ1Ijoia2lyYW5wIiwiYSI6ImNqOTYyMDd3OTAxY24yeGxuMWs4MTg5eGMifQ.HyqOJpeVwr_FBolX1COjDg';
+            var map = L.mapbox.map('map', 'mapbox.streets', {
+                zoomControl: false
+            }).setView([41.0252, 28.9950], 11);
+            
+            // Disable drag and zoom handlers.
+                    //map.dragging.disable();
+            map.touchZoom.disable();
+                    //map.doubleClickZoom.disable();
+            map.scrollWheelZoom.disable();
+            map.keyboard.disable();
+            
+            // Disable tap handler, if present.
+            if (map.tap) map.tap.disable();
+            
+            
+            //CENTERING MARKER
+            
+L.mapbox.accessToken = 'pk.eyJ1Ijoia2lyYW5wIiwiYSI6ImNqOTYyMDd3OTAxY24yeGxuMWs4MTg5eGMifQ.HyqOJpeVwr_FBolX1COjDg';
+    var map = L.mapbox.map('map', 'mapbox.dc-markers');
+
+    map.featureLayer.on('click', function(e) {
+        map.panTo(e.layer.getLatLng());
+    });
+
+        </script>
+        <script src="js/slideshow.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+              new WOW().init();
+        </script>
+        
+        <script>
+        
+            function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+        </script>
+    </body>
+
+</html>

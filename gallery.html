@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         
+        <meta charset="utf-8"/>
+        <title>Gallery - Tippi Nails</title>
+        <!-- MY CSS -->
+        <link href="css/galleryStyles.css" rel=stylesheet type="text/css"/>
+        <!-- CSS RESET NORMALIZE -->
+        <!-- Normalize.css is a small CSS file that provides better cross-browser 
+             consistency in the default styling of HTML elements. -->
+        <link href="css/normalize.css" rel=stylesheet type="text/css"/>
+        <link href="css/animate.css" rel=stylesheet type="text/css"/>
+        <link href="css/hover-min.css" rel=stylesheet type="text/css"/>
+        <!-- FONT AWESOME CDN -->
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        <script src="https://use.fontawesome.com/1738d745de.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Petit+Formal+Script|Quintessential" rel="stylesheet">
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Courgette|Muli" rel="stylesheet">
+        
+        
+    </head>
+    
+    <body>
+        
+        <!---------------------------------------------------------------
+                                GALLERY SECTION
+        ---------------------------------------------------------------->
+
+        <!---------------------------------------------------------------
+                              NAVIGATION SECTION
+        ---------------------------------------------------------------->
+        
+        <section id="galleryPage" class="section1">
+            
+                <div id="mainMenu" class=" topnav navC menuItems animated slideInDown">
+                    
+                    
+                            
+                            <a class="otherLinks" href="services.html">SERVICES</a>
+                            <a class="otherLinks" href="gallery.html">GALLERY</a>
+                            <a class="logoLink" href="indexNail.html"><div class="t">Tippi</div><div class="n"> Nails</div></a>
+                            <a class="otherLinks" href="hours.html">HOURS</a>
+                            <a class="otherLinks" href="bookContact.html">BOOK/CONTACT</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                        
+                            
+                  
+                
+                </div>
+
+        <!---------------------------------------------------------------
+                            NAVIGATION SECTION ENDS
+        ---------------------------------------------------------------->
+            
+        <!---------------------------------------------------------------
+                               GALLERY SECTION ENDS
+        ----------------------------------------------------------------> 
+        
+            <div id="gallerySect">
+                
+                <div class="galleryTitle">
+                    
+                    <h1 class="wow pulse">GALLERY</h1>
+                
+                </div>
+                
+                <!--<div class="nailImages">
+                    
+                     Masonry js layout 
+                    <img class="nail1" src="galleryImages/nails1.jpg" alt="nail1"/>
+                    <img class="nail2" src="galleryImages/nails2.jpg" alt="nail2"/>
+                    <img class="nail3" src="galleryImages/nails3.jpg" alt="nail3"/>
+                    <img class="nail4" src="galleryImages/nail4.png" alt="nail4"/>
+                    <img class="nail5" src="galleryImages/nail5.png" alt="nail5"/>
+                    <img class="nail6" src="galleryImages/nail6.png" alt="nail6"/>
+                    <img class="nail7" src="galleryImages/nail7.png" alt="nail7"/>
+                    <img class="nail8" src="galleryImages/nail8.png" alt="nail8"/>
+                    <img class="nail9" src="galleryImages/nail9.png" alt="nail9"/>
+                    <img class="nail10" src="galleryImages/nail10.png" alt="nail10"/>
+                    <img class="nail11" src="galleryImages/nail11.png" alt="nail11"/>
+                
+                </div>-->
+                
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item first"><img src="galleryImages/nails1.jpg" alt="nail1"/></div>
+                    <div class="grid-item one"><img src="galleryImages/Screen%20Shot%202017-10-26%20at%2022.57.10.png" alt="nail3"/></div>
+                    <div class="grid-item three"><img src="galleryImages/nail4.png" alt="nail4"/></div>
+                    <div class="grid-item two"><img src="galleryImages/nails2.jpg" alt="nail2"/></div>
+                    
+                    <div class="grid-item four"><img src="galleryImages/nail5.png" alt="nail5"/></div>
+                    <div class="grid-item five"><img src="galleryImages/nail6.png" alt="nail6"/></div>
+                    <div class="grid-item six"><img src="galleryImages/nail7.png" alt="nail7"/></div>
+                    <div class="grid-item seven"><img src="galleryImages/nail8.png" alt="nail8"/></div>
+                    <div class="grid-item eight"><img src="galleryImages/nail9.png" alt="nail9"/></div>
+                    <div class="grid-item nine"><img src="galleryImages/nail10.png" alt="nail10"/></div>
+                    <div class="grid-item ten"><img src="galleryImages/nail11.png" alt="nail11"/></div>
+                </div>
+            
+            
+            </div>
+       
+            
+        </section>
+            
+        <!---------------------------------------------------------------
+                                     FOOTER
+        ----------------------------------------------------------------> 
+        
+        <section id="footer" class="container">
+        
+                <div class="footerItems">
+                    
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/tippinails" target="_blank" class="fbIcon"><i class="fa fa-facebook fa-lg"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.instagram.com/tippinails_/" target="_blank" class="instaIcon"><i class="fa fa-instagram fa-lg"></i></a>
+                    </div>
+                    
+                    <div class="footerText">
+                    <p><b class="cSymbol">&copy;</b><b> 2017 - Tippi Nails</b></p>
+                    <p><b>Redesigned By Kiran Paul</b></p>
+                    </div>
+                
+                    
+                </div>
+            
+        </section>
+            
+        <!---------------------------------------------------------------
+                                   FOOTER ENDS
+        ----------------------------------------------------------------> 
+            
+        <!---------------------------------------------------------------
+                            FIRST PAGE SECTION ENDS
+        ---------------------------------------------------------------->
+
+        <!-- MANSONRY -->
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script>
+            //FOR IT TO DO MASONRY
+            $('.grid').masonry({
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 200
+            });
+            
+            //FOR IT TO BE RESPONSIVE
+            $('.grid').masonry({
+                // set itemSelector so .grid-sizer is not used in layout
+                itemSelector: '.grid-item',
+                // use element for option
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            })
+            
+            $('.grid').masonry({
+  columnWidth: 200,
+  itemSelector: '.grid-item'
+});
+        </script>
+        <script src="js/slideshow.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+              new WOW().init();
+        </script>
+        
+        <script>
+        
+            function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+        </script>
+        
+    </body>
+
+</html>
